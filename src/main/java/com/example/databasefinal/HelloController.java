@@ -13,10 +13,43 @@ import java.util.ArrayList;
 
 public class HelloController {
     @FXML
-    private Button addButton;
+    private Button addDepartmentButton;
 
     @FXML
-    private Button deleteButton;
+    private Button addEmployeeButton;
+
+    @FXML
+    private Button addEmployeeDeptButton;
+
+    @FXML
+    private Button deleteDepartmentButton;
+
+    @FXML
+    private Button deleteEmployeeButton;
+
+    @FXML
+    private Button deleteEmployeeDeptButton;
+
+    @FXML
+    private ListView<?> departmentListView;
+
+    @FXML
+    private TextField deptIdField;
+
+    @FXML
+    private TextField deptNameField;
+
+    @FXML
+    private TextField dept_id;
+
+    @FXML
+    private TextField emp_id;
+
+    @FXML
+    private TextField emp_names;
+
+    @FXML
+    private ListView<String> employeeDeptListView;
 
     @FXML
     private ListView<String> employeeListView;
@@ -28,6 +61,9 @@ public class HelloController {
     private TextField idField;
 
     @FXML
+    private MenuItem inst;
+
+    @FXML
     private TextField nameField;
 
     @FXML
@@ -37,7 +73,14 @@ public class HelloController {
     private TextField salaryField;
 
     @FXML
-    private Button updateButton;
+    private Button updateDepartmentButton;
+
+    @FXML
+    private Button updateEmployeeButton;
+
+    @FXML
+    private Button updateEmployeeDeptButton;
+
     private Connection conn;
 
     private EmployeeData employeeData;
@@ -154,6 +197,38 @@ public class HelloController {
             showAlert("Database Error", "An error occurred while deleting the employee: " + e.getMessage());
         }
     }
+    @FXML
+    void onAddDepartment(ActionEvent event) {
+
+    }
+
+    @FXML
+    void onAddEmployeeDept(ActionEvent event) {
+
+    }
+
+    @FXML
+    void onDeleteDepartment(ActionEvent event) {
+
+    }
+
+    @FXML
+    void onDeleteEmployeeDept(ActionEvent event) {
+
+    }
+
+
+    @FXML
+    void onUpdateDepartment(ActionEvent event) {
+
+    }
+
+    @FXML
+    void onUpdateEmployeeDept(ActionEvent event) {
+
+    }
+
+
 
     private void refreshEmployeeList() {
         EmployeeData employeeData = new EmployeeData();
