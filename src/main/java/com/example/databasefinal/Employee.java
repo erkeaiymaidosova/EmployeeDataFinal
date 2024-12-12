@@ -1,6 +1,6 @@
 package com.example.databasefinal;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Employee {
     private int id;
@@ -8,18 +8,6 @@ public class Employee {
     private String position;
     private double salary;
     private Date hireDate;
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", position='" + position + '\'' +
-                ", salary=" + salary +
-                ", hireDate=" + hireDate +
-                '}';
-    }
-
 
     public Employee(int id, String name, String position, double salary, Date hireDate) {
         this.id = id;
@@ -69,7 +57,8 @@ public class Employee {
         this.hireDate = hireDate;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "ID: " + id + ", Name: " + name + ", Position: " + position + ", Salary: " + salary + ", Hire Date: " + hireDate;
+    }
 }
-

@@ -79,19 +79,20 @@
         <Tab text="Department">
             <VBox alignment="TOP_CENTER" spacing="10">
                 <GridPane alignment="CENTER" hgap="10" vgap="10">
+                    <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                    </rowConstraints>
+
                     <Label text="Dept ID:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
                     <TextField fx:id="deptIdField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
 
                     <Label text="Dept Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
                     <TextField fx:id="deptNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-               <columnConstraints>
-                  <ColumnConstraints />
-                  <ColumnConstraints />
-               </columnConstraints>
-               <rowConstraints>
-                  <RowConstraints />
-                  <RowConstraints />
-               </rowConstraints>
                 </GridPane>
 
                 <VBox alignment="CENTER" spacing="5">
@@ -106,6 +107,7 @@
                 </HBox>
             </VBox>
         </Tab>
+
 
         <!-- Employee_Department Tab -->
         <Tab text="Employee_Department">
